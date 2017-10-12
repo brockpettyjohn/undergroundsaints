@@ -4,14 +4,15 @@ import './SideBar.css';
 export default class SideBar extends Component {
     constructor() {
         super();
-        this.state = {
-            toggle: false
-        }
+        // this.state = {
+        //     toggle: false
+        // }
     }
     render() {
-        // const slideMenu = this.state.toggle ? "openBoxCover" : "boxCover"
+        // const slideMenu = this.state.toggle ? "boxcoverShow" : "boxcoverHide"
+        console.log(this.props)
         return (
-            <div className='boxcover'>
+            <div className={this.props.classForSlider}>
                 <div className='box1'></div>
                 <div className='box2'>
                     <a href="/home" className='site-nav_link'>Home</a>
