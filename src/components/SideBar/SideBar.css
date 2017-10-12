@@ -23,7 +23,17 @@
     height: 100vh;
     display: flex;
     position: absolute;
+    animation: slide .5s;
 }
+@keyframes slide{
+    from{
+        margin-left: 100vw;
+    }
+    to{
+        margin-left: 0vw;
+    }
+}
+
 .box1 {
     background-color: grey;
     opacity:.3;
